@@ -6,7 +6,8 @@ import SearchBar from './searchbar';
 import Selected from './selected';
 import Display from './display';
 import Footer from './footer';
-import axios from 'axios';
+import $ from 'jquery';
+
 
 
 
@@ -21,20 +22,36 @@ export default class App extends Component {
             type: "&entity=song"
         }
         this.getResults = this.getResults.bind(this);
+        this.callbackForGet = this.callbackForGet.bind(this);
         // this.getSelected = this.getSelected.bind(this);
     }
 
+    callbackForGet() {
+        console.log("online");
+    }
+
     getResults(term, type) {
-        const url = `https://itunes.apple.com/search?term=${term}${this.state.type}`
-        axios.get(url)
-            .then((response) => {
-                console.log("success")
-                console.log(response.data.results[0].trackName);
-                this.setState({ results: response.data.results })
-            })
-            .catch(function (error) {
+        var config = {
+            headers: {'Access-Control-Allow-Origin': '*'}
+        };
+
+        const url = `https://itunes.apple.com/search?term=${term}${this.state.type}`;
+
+        $.ajax({
+            url: url,
+            data: {
+                format: 'json'
+            },
+            type: 'GET',
+            dataType: 'jsonp',
+            success: (data) => {
+                console.log(data);
+                this.setState({ results: data.results })
+            },
+            error: (error) => {
                 console.log(error);
-            });
+            }
+        });
     }
 
     // getSelected(item) {
