@@ -1,0 +1,322 @@
+$dark: #333;
+$light: #ececee;
+$shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+
+
+html, body {
+  font-family: "Myriad Set Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin:0 auto;
+  //width:100%;
+  text-align:center;
+  background-color: #ececee;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+}
+
+.container {
+  background-color: #ececee;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  margin: 0;
+  //max-width: 100%;
+  max-height: 100vh;
+  //height: 100vh;
+  display: table;
+  height: 100%;
+}
+
+.title {
+  color: white;
+  width: 100%;
+  padding: 10px;
+  background-color: $dark;
+  font-size: 1.4em;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.24);
+  h1 {
+    margin: 1rem 0;
+    text-align: center;
+    font-weight: 100;
+    //background-color: $dark;
+    color: white;
+  }
+}
+
+
+.searchBarContainer {
+  //width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  input {
+    padding: 5px;
+    margin: 0 auto;
+    width: 60%;
+    display: block;
+    font-size: 16px;
+    height: 30px;
+    &:focus {
+      outline-width: 0;
+    }
+  }
+  #searchIcon {
+    font-size: 26px;
+    position: relative;
+    z-index: 1;
+    right: -245px;
+    top: -35px;
+    color: #7B7B7B;
+    cursor:pointer;
+    width: 0;
+  }
+}
+
+.content {
+  padding: 0 40px 10px 40px;
+}
+
+.selected {
+  //height: 380px;
+  position: relative;
+  width: 30%;
+  max-width: 370px;
+  //padding: 15px 10px;
+  background-color: white;
+  border-radius: 6px;
+  color: $dark;
+  float: left;
+  height: 480px;
+  margin-left: 30px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+  .selectedImage {
+    padding: 5px;
+  }
+  .selectedContent {
+    padding:  0 10px 10px 10px;
+  }
+  img {
+    height: 340px;
+    width: 360px;
+    max-width: 100%;
+  }
+  .selectedContent {
+    h2, h3, h4, h5, p {
+      margin: 0;
+    }
+  }
+  .selectedContent {
+    //height: 400px;
+    //padding: 10px;
+    button, a {
+      background-color: #4897fa;
+      border-radius: 6px;
+      color: white;
+      border: none;
+      padding: 5px;
+    }
+  }
+}
+
+.selectedTime {
+  float: left;
+  //color: gray;
+  position: absolute;
+  right: 10px;
+  bottom: 109px;
+}
+
+.selectedPrice {
+  float: left;
+  color: gray;
+  position: absolute;
+  left: 6px;
+  bottom: 6px;
+}
+
+.selectedButton {
+  float: right;
+  position: absolute;
+  right: 6px;
+  bottom: 6px;
+}
+
+.display {
+  display: inline-block;
+  text-align: center;
+  background-color: #FAFAFA;
+  border-radius: 6px;
+  width: 65%;
+  margin-bottom: 90px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+  cursor: pointer;
+  max-height: 40%;
+  height: 480px;
+  overflow-y: auto;
+  //height: 450px;
+}
+
+.itunesButton {
+  line-height: 100px;
+  button {
+    background-color: #4897fa;
+    border-radius: 6px;
+    color: white;
+    border: none;
+    padding: 5px;
+  }
+}
+
+
+.result {
+  color: $dark;
+  padding: 10px;
+  border-bottom: 1px solid darkgray;
+  //overflow: hidden;
+  &:hover {
+    background-color: #e8e8e8;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+  }
+  &:first-child:hover {
+    border-radius: 8px 8px 0 0;
+  }
+  &:last-child {
+    border-bottom: none;
+  }
+  &:last-child:hover {
+    border-radius: 0 0 8px 8px;
+  }
+  a {
+    color: $dark;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+
+.resultImg {
+  max-height: 100%;
+  overflow:hidden;
+  float: left;
+  img {
+    float:left;
+    max-width: 100% !important;
+    height: 95px;
+    width: auto;
+  }
+}
+.resultInfo {
+  overflow: hidden; /* if you don't want #second to wrap below #first */
+  //float: left;
+  text-align: left;
+  margin: 0;
+  padding: 10px;
+  h3, h5, p {
+    margin: 0;
+  }
+  a {
+    text-decoration: none;
+  }
+
+}
+
+.itunesButton {
+  float: right;
+}
+
+.clearBox {
+  clear: both;
+}
+
+.price {
+  color: gray;
+}
+
+
+
+
+
+footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+  background-color: $dark;
+  color: white;
+  padding: 10px;
+}
+
+
+
+@media screen and (max-width: 780px) {
+  .searchBarContainer {
+    input {
+      width: 80%;
+    }
+  }
+}
+
+
+
+@media screen and (max-width: 415px) {
+  .title {
+    h1 {
+      font-size: 1.5em;
+    }
+  }
+  .searchBarContainer {
+    input {
+      width: 80%;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .title {
+    h1 {
+      font-size: 1.5em;
+    }
+  }
+  .searchBarContainer {
+    input {
+      padding: 5px;
+      height: 30px;
+      font-size: 22px;
+      width: 80%;
+    }
+  }
+  .display {
+    width: 85%;
+    height: 25em;
+  }
+}
+
+@media screen and (max-width: 320px) {
+
+  .title {
+    h1 {
+      font-size: 1.5em;
+    }
+  }
+  .searchBarContainer {
+    input {
+      padding: 5px;
+      height: 30px;
+      font-size: 22px;
+      width: 80%;
+    }
+  }
+  .display {
+    width: 500px;
+    height: 800px;
+  }
+}
+
