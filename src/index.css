@@ -188,9 +188,39 @@ footer {
   padding: 10px;
   font-weight: 200; }
 
+@media screen and (max-width: 1090px) {
+  .selected {
+    width: 50%;
+    max-width: 370px; }
+
+  .display {
+    float: none;
+    width: 50%; } }
+@media screen and (max-width: 909px) {
+  .selected {
+    display: none; }
+    .selected img {
+      display: none; }
+
+  .display {
+    float: none;
+    width: 80%; } }
 @media screen and (max-width: 780px) {
   .searchBarContainer input {
-    width: 80%; } }
+    width: 80%; }
+
+  .display {
+    font-size: 14px; } }
+@media screen and (max-width: 562px) {
+  .display .itunesButton {
+    width: 45%; }
+
+  .result {
+    float: none; }
+    .result .resultImg {
+      float: none; }
+    .result button {
+      width: 70%; } }
 @media screen and (max-width: 415px) {
   .title h1 {
     font-size: 1.5em; }
