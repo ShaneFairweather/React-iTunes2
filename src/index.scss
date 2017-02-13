@@ -302,11 +302,12 @@ footer {
 
 @media screen and (max-width: 562px) {
   .display {
+    width: 95%;
+    //height: 90%;
     .itunesButton {
       width: 45%;
     }
   }
-
   .result {
     float: none;
     .resultImg {
@@ -325,6 +326,9 @@ footer {
     h1 {
       font-size: 1.5em;
     }
+  }
+  .content {
+    padding: 0;
   }
   .searchBarContainer {
     input {

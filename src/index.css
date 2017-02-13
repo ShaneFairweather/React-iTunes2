@@ -212,8 +212,10 @@ footer {
   .display {
     font-size: 14px; } }
 @media screen and (max-width: 562px) {
-  .display .itunesButton {
-    width: 45%; }
+  .display {
+    width: 95%; }
+    .display .itunesButton {
+      width: 45%; }
 
   .result {
     float: none; }
@@ -224,6 +226,9 @@ footer {
 @media screen and (max-width: 415px) {
   .title h1 {
     font-size: 1.5em; }
+
+  .content {
+    padding: 0; }
 
   .searchBarContainer input {
     width: 80%; } }

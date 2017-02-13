@@ -1,6 +1,4 @@
-import React, { Component } from 'react';
-
-
+import React from 'react';
 
 const Result = (props) => {
     function parseTime(milliseconds) {
@@ -15,7 +13,7 @@ const Result = (props) => {
                 <button>View on iTunes.com</button>
             </div>
             <div className="resultImg">
-                <img src={props.imageUrl} />
+                <img src={props.imageUrl} alt={props.trackName}/>
                 <div className="clearBox"></div>
             </div>
             <div className="resultInfo">
