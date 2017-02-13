@@ -3,10 +3,13 @@
     <properties>
       <sourceFilesUrls>
         <item url="file://$PROJECT_DIR$/build/static/js/main.6a3791eb-compiled.js" />
+        <item url="file://$PROJECT_DIR$/build/static/js/main.3356b9c5-compiled.js" />
       </sourceFilesUrls>
     </properties>
     <CLASSES>
       <root url="file://$PROJECT_DIR$/build/static/js/main.6a3791eb-compiled.js" />
+      <root url="file://$PROJECT_DIR$/build/static/js/main.6a3791eb-compiled.js" />
+      <root url="file://$PROJECT_DIR$/build/static/js/main.3356b9c5-compiled.js" />
     </CLASSES>
     <SOURCES />
   </library>
