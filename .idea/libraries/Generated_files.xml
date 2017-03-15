@@ -3,7 +3,7 @@
     <properties>
       <sourceFilesUrls>
         <item url="file://$PROJECT_DIR$/build/static/js/main.27b16fb9-compiled.js" />
-        <item url="file://$PROJECT_DIR$/build/static/js/main.4bd192bf-compiled.js" />
+        <item url="file://$PROJECT_DIR$/build/static/js/main.c8f03a16-compiled.js" />
       </sourceFilesUrls>
     </properties>
     <CLASSES>
@@ -14,6 +14,8 @@
       <root url="file://$PROJECT_DIR$/build/static/js/main.3356b9c5-compiled.js" />
       <root url="file://$PROJECT_DIR$/build/static/js/main.27b16fb9-compiled.js" />
       <root url="file://$PROJECT_DIR$/build/static/js/main.4bd192bf-compiled.js" />
+      <root url="file://$PROJECT_DIR$/build/static/js/main.27b16fb9-compiled.js" />
+      <root url="file://$PROJECT_DIR$/build/static/js/main.c8f03a16-compiled.js" />
     </CLASSES>
     <SOURCES />
   </library>
